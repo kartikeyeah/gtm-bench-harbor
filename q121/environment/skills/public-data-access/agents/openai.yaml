@@ -1,0 +1,4 @@
+interface:
+  display_name: "Public Data Access"
+  short_description: "Use available evidence for traceable GTM benchmark prospecting"
+  default_prompt: "Use the Public Data Access skill for traceable GTM benchmark prospecting with the evidence sources available in the current harness."
