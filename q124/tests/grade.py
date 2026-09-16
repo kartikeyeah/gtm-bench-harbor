@@ -233,7 +233,8 @@ if __name__ == "__main__":
         run()
     except Exception as error:
         (LOGS / "error.json").write_text(json.dumps({
-            "stage": "judge", "error_type": type(error).__name__,
+            "stage": "judge",
+            "error_type": f"{type(error).__name__}: {error}",
         }))
         # Judge outages and missing credentials are evaluation errors, not zero
         # agent scores. Harbor reports the missing reward as a verifier failure.
